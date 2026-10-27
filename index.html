@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Homies Snack | Chikmagalur Coffee</title>
+<meta name="description" content="Shop Chikmagalur Filter Coffee Powder, 100g for ₹199.">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--brown:#382218;--cream:#f8f2e8;--gold:#c79a59}
+body{font-family:Arial,sans-serif;color:var(--brown);background:#fffdf9}
+a{text-decoration:none;color:inherit}
+button{cursor:pointer;font:inherit}
+nav{padding:20px 7%;display:flex;align-items:center;justify-content:space-between;background:#fff;position:sticky;top:0;z-index:5;border-bottom:1px solid #eee}
+.logo{font-size:24px;font-weight:900}
+.logo span{color:var(--gold)}
+.cart-btn,.btn{background:var(--brown);color:white;border:0;padding:13px 18px;border-radius:5px}
+.hero{padding:65px 7%;background:var(--cream);display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:35px}
+.eyebrow{color:#986a36;font-size:12px;font-weight:bold;letter-spacing:2px;text-transform:uppercase}
+h1{font-size:clamp(40px,6vw,68px);line-height:1.1;margin:20px 0}
+h1 span{color:#986a36}
+.hero p{line-height:1.8;color:#796b5e}
+.hero img{width:100%;height:350px;object-fit:cover;border-radius:8px}
+.btn{display:inline-block;margin-top:22px}
+.features{display:flex;justify-content:space-around;gap:15px;padding:25px 5%;text-align:center;border-bottom:1px solid #eee}
+.features div{font-weight:bold;font-size:14px}
+.features small{display:block;margin-top:7px;color:#796b5e;font-weight:normal}
+.shop{padding:65px 7%}
+.heading{text-align:center;margin-bottom:35px}
+.heading h2{font-size:32px;margin:12px 0}
+.heading p{color:#796b5e}
+.product{max-width:390px;margin:auto;border:1px solid #eee0d0;border-radius:8px;overflow:hidden;background:white}
+.product img{width:100%;height:270px;object-fit:cover}
+.product-info{padding:22px}
+.tag{font-size:11px;color:#986a36;font-weight:bold;text-transform:uppercase}
+.product h3{font-size:23px;margin:12px 0}
+.product p{font-size:14px;color:#796b5e;line-height:1.7}
+.price{font-size:25px;font-weight:bold;margin:18px 0}
+.add-btn{width:100%;padding:14px;background:var(--brown);color:white;border:0;border-radius:5px}
+.story{background:#24160f;color:white;text-align:center;padding:55px 7%}
+.story h2{margin:15px 0;font-size:30px}
+.story p{line-height:1.8;color:#d7c7b7;max-width:600px;margin:auto}
+.cart{padding:50px 7%;background:var(--cream)}
+.cart h2{margin-bottom:20px}
+.cart-item{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:16px 0;border-bottom:1px solid #dfd0bf}
+.qty button{padding:5px 10px;margin:0 5px}
+.total{text-align:right;font-size:23px;font-weight:bold;margin-top:22px}
+.note{text-align:right;font-size:13px;color:#796b5e;margin-top:10px}
+#checkout{display:block;margin:20px 0 0 auto;background:#218c51;color:white;padding:15px 20px;border:0;border-radius:5px}
+#checkout:disabled{opacity:.5;cursor:not-allowed}
+footer{padding:28px;text-align:center;background:#1c110b;color:white}
+footer p{font-size:13px;color:#c8b7a7;margin-top:8px}
+@media(max-width:700px){
+ .hero{grid-template-columns:1fr;padding:45px 6%}
+ .hero img{height:260px}
+ .features{padding:20px 3%;gap:8px}
+ .features div{font-size:12px}
+ .shop{padding:50px 5%}
+ .product img{height:230px}
+ .heading h2{font-size:27px}
+ .cart{padding:40px 5%}
+}
+</style>
+</head>
+
+<body>
+<nav>
+  <a class="logo" href="#">HOMIES <span>SNACK.</span></a>
+  <button class="cart-btn" onclick="document.getElementById('cart').scrollIntoView({behavior:'smooth'})">
+    Cart (<span id="count">0</span>)
+  </button>
+</nav>
+
+<header class="hero">
+  <div>
+    <div class="eyebrow">From Chikmagalur</div>
+    <h1>Authentic Coffee.<br><span>Rich Flavour.</span></h1>
+    <p>Experience the rich aroma of Chikmagalur Filter Coffee Powder. Your everyday cup of traditional South Indian coffee starts here.</p>
+    <a href="#shop" class="btn">Shop Coffee — ₹199</a>
+  </div>
+  <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=1000&q=85" alt="Coffee beans">
+</header>
+
+<div class="features">
+  <div>☕ Rich Aroma<small>For coffee lovers</small></div>
+  <div>🌱 Chikmagalur<small>Coffee origin</small></div>
+  <div>📦 100g Pack<small>Easy ordering</small></div>
+</div>
+
+<section class="shop" id="shop">
+  <div class="heading">
+    <div class="eyebrow">Our coffee</div>
+    <h2>Chikmagalur Filter Coffee</h2>
+    <p>One special coffee powder. One unforgettable cup.</p>
+  </div>
+
+  <article class="product">
+    <img src="https://images.unsplash.com/photo-1559525839-b184a4d698c7?auto=format&fit=crop&w=800&q=85" alt="Coffee beans and coffee">
+    <div class="product-info">
+      <div class="tag">Premium Coffee Powder</div>
+      <h3>Chikmagalur Filter Coffee Powder</h3>
+      <p>Rich aroma and traditional filter coffee flavour. Perfect for your daily coffee routine.</p>
+      <div class="price">₹199 <span style="font-size:14px;font-weight:normal">/ 100g</span></div>
+      <button class="add-btn" onclick="addToCart()">Add to Cart +</button>
+    </div>
+  </article>
+</section>
+
+<section class="story">
+  <div class="eyebrow">The love of coffee</div>
+  <h2>A little Chikmagalur in every cup.</h2>
+  <p>Bring home the rich aroma of filter coffee powder. Add your pack to the cart and place your order directly through WhatsApp.</p>
+</section>
+
+<section class="cart" id="cart">
+  <h2>Your Cart 🛒</h2>
+  <div id="items">Your cart is empty. Add some coffee!</div>
+  <div class="total">Total: ₹<span id="total">0</span></div>
+  <p class="note">Delivery charges will be confirmed separately.</p>
+  <button id="checkout" onclick="checkout()" disabled>Order on WhatsApp</button>
+</section>
+
+<footer>
+  <div class="logo">HOMIES <span>SNACK.</span></div>
+  <p>Chikmagalur Filter Coffee Powder · 100g for ₹199</p>
+  <p>© 2026 Homies Snack. All rights reserved.</p>
+</footer>
+
+<script>
+let quantity = 0;
+const price = 199;
+
+function addToCart(){
+  quantity++;
+  renderCart();
+  document.getElementById("cart").scrollIntoView({behavior:"smooth"});
+}
+
+function changeQuantity(amount){
+  quantity = Math.max(0, quantity + amount);
+  renderCart();
+}
+
+function renderCart(){
+  document.getElementById("count").textContent = quantity;
+  document.getElementById("total").textContent = quantity * price;
+  document.getElementById("checkout").disabled = quantity === 0;
+
+  if(quantity === 0){
+    document.getElementById("items").textContent =
+      "Your cart is empty. Add some coffee!";
+    return;
+  }
+
+  document.getElementById("items").innerHTML = `
+    <div class="cart-item">
+      <div>
+        <strong>Chikmagalur Filter Coffee Powder</strong><br>
+        <small>100g pack · ₹199 each</small>
+      </div>
+      <div class="qty">
+        <button onclick="changeQuantity(-1)">−</button>
+        ${quantity}
+        <button onclick="changeQuantity(1)">+</button>
+      </div>
+      <strong>₹${quantity * price}</strong>
+    </div>
+  `;
+}
+
+function checkout(){
+  if(quantity === 0){
+    alert("Please add coffee powder to your cart.");
+    return;
+  }
+
+  // Replace with the shop owner's real WhatsApp number.
+  // Format: 91 followed by 10 digits. No + or spaces.
+  const phone = "917598076982";
+
+  if(!/^91\d{10}$/.test(phone)){
+    alert("Please enter a valid shop WhatsApp number in the code.");
+    return;
+  }
+
+  const total = quantity * price;
+  const message =
+    "Hello! I want to order Chikmagalur Filter Coffee Powder.\n\n" +
+    "Product: Chikmagalur Filter Coffee Powder\n" +
+    "Pack size: 100g\n" +
+    "Quantity: " + quantity + "\n" +
+    "Total: Rs." + total + "\n\n" +
+    "Please confirm availability and delivery charges.";
+
+  const url = "https://api.whatsapp.com/send?phone=" +
+    phone + "&text=" + encodeURIComponent(message);
+
+  window.location.href = url;
+}
+
+renderCart();
+</script>
+</body>
+</html>
